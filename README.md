@@ -347,7 +347,7 @@ graph LR
 
 ## How well tested it is
 
-- **67 automated tests**, run on Python 3.13 and 3.14 (Windows). They build the demo repository in
+- **68 automated tests**, run on Python 3.13 and 3.14 (Windows). They build the demo repository in
   a temporary folder and assert that every planted problem is found - and that the
   formatting-only commit is *not* flagged.
 - **Stress-tested on real code** it was not written for: about 460 Python files (parts of the
