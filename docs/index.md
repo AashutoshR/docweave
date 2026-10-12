@@ -48,6 +48,7 @@
 <!-- docweave:begin recent -->
 ## Recent changes
 
+- 2026-10-12 · **other** · Initial commit ([`dc5eb37`](https://github.com/AashutoshR/docweave/commit/dc5eb37a4000c12a8efada1212736c3214fa9d85), AashutoshR)
 - 2026-10-12 · **fix** · Keep housekeeping commits out of the decision log ([`409eb66`](https://github.com/AashutoshR/docweave/commit/409eb66f44bbd2ce81f1e71e007b10ca3a900eba), AashutoshR) - touches [`Renderer.decisions_page`](api/docweave.render.md#renderer-decisions-page)
 - 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR) - touches [`Reference`](api/docweave.drift.md#reference), [`check_staleness`](api/docweave.drift.md#check-staleness), [`scan_markdown`](api/docweave.drift.md#scan-markdown)
 <!-- docweave:end recent -->
