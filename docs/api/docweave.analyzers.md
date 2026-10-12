@@ -3,7 +3,7 @@
 
 Language analyzers and source discovery.
 
-Source: [`docweave/analyzers/__init__.py`](../../docweave/analyzers/__init__.py) · 61 lines
+Source: [`docweave/analyzers/__init__.py`](../../docweave/analyzers/__init__.py) · 61 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.analyzers.javascript`](docweave.analyzers.javascript.md), [`docweave.analyzers.python`](docweave.analyzers.python.md), [`docweave.config`](docweave.config.md), [`docweave.model`](docweave.model.md)
 
@@ -35,7 +35,13 @@ Analyzers setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/analyzers/__init__.py:13`](../../docweave/analyzers/__init__.py#L13)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/__init__.py:13`](../../docweave/analyzers/__init__.py#L13) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:ANALYZERS -->
 
 <!-- docweave:begin sym:is_excluded -->
@@ -55,7 +61,13 @@ True if any path component, or the whole relative path, matches an exclude patte
 
 **Returns:** `bool`
 
-<sub>[`docweave/analyzers/__init__.py:16`](../../docweave/analyzers/__init__.py#L16) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/__init__.py:16`](../../docweave/analyzers/__init__.py#L16) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:is_excluded -->
 
 <!-- docweave:begin sym:discover -->
@@ -76,7 +88,13 @@ List project files (posix paths relative to the root) having one of ``extensions
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/analyzers/__init__.py:24`](../../docweave/analyzers/__init__.py#L24) · complexity 10</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/__init__.py:24`](../../docweave/analyzers/__init__.py#L24) · complexity 10 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:discover -->
 
 <!-- docweave:begin sym:scan -->
@@ -95,5 +113,11 @@ Run static analysis over every supported source file in the project.
 
 **Returns:** `Project`
 
-<sub>[`docweave/analyzers/__init__.py:42`](../../docweave/analyzers/__init__.py#L42) · complexity 6</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/__init__.py:42`](../../docweave/analyzers/__init__.py#L42) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:scan -->

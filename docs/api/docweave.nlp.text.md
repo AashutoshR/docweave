@@ -3,7 +3,7 @@
 
 Tokenising, identifier splitting, light stemming and sentence segmentation.
 
-Source: [`docweave/nlp/text.py`](../../docweave/nlp/text.py) · 88 lines
+Source: [`docweave/nlp/text.py`](../../docweave/nlp/text.py) · 88 lines · main authors: AashutoshR (100%)
 
 **Imported by:** [`docweave.linker`](docweave.linker.md), [`docweave.nlp.describe`](docweave.nlp.describe.md), [`docweave.nlp.docstring`](docweave.nlp.docstring.md), [`docweave.nlp.intent`](docweave.nlp.intent.md), [`docweave.nlp.rationale`](docweave.nlp.rationale.md), [`docweave.render`](docweave.render.md), [`docweave.search`](docweave.search.md)
 <!-- docweave:end module -->
@@ -35,7 +35,13 @@ Stopwords setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/text.py:7`](../../docweave/nlp/text.py#L7)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:7`](../../docweave/nlp/text.py#L7) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:STOPWORDS -->
 
 <!-- docweave:begin sym:split_identifier -->
@@ -54,7 +60,13 @@ Split ``snake_case`` / ``camelCase`` / ``HTTPServer`` into lowercase words.
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/nlp/text.py:20`](../../docweave/nlp/text.py#L20) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:20`](../../docweave/nlp/text.py#L20) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:split_identifier -->
 
 <!-- docweave:begin sym:stem -->
@@ -73,7 +85,13 @@ A deliberately small suffix stripper; it only has to be consistent, not linguist
 
 **Returns:** `str`
 
-<sub>[`docweave/nlp/text.py:28`](../../docweave/nlp/text.py#L28) · complexity 12</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:28`](../../docweave/nlp/text.py#L28) · complexity 12 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:stem -->
 
 <!-- docweave:begin sym:tokenize -->
@@ -93,7 +111,13 @@ Lowercased, identifier-split, stemmed tokens suitable for retrieval and classifi
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/nlp/text.py:44`](../../docweave/nlp/text.py#L44) · complexity 6</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:44`](../../docweave/nlp/text.py#L44) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:tokenize -->
 
 <!-- docweave:begin sym:sentences -->
@@ -112,7 +136,13 @@ Split prose (commit bodies, chat, PR descriptions) into sentences; bullets count
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/nlp/text.py:59`](../../docweave/nlp/text.py#L59) · complexity 8</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:59`](../../docweave/nlp/text.py#L59) · complexity 8 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:sentences -->
 
 <!-- docweave:begin sym:first_sentence -->
@@ -131,5 +161,11 @@ The first sentence of ``text``, or an empty string.
 
 **Returns:** `str`
 
-<sub>[`docweave/nlp/text.py:84`](../../docweave/nlp/text.py#L84) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/text.py:84`](../../docweave/nlp/text.py#L84) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:first_sentence -->

@@ -8,7 +8,7 @@ markers (see :mod:`docweave.regions`), which is what lets regeneration update th
 while keeping anything a person added around them. Output is deterministic - no timestamps - so
 an unchanged project regenerates byte-identical docs and ``git diff`` stays quiet.
 
-Source: [`docweave/render.py`](../../docweave/render.py) · 468 lines
+Source: [`docweave/render.py`](../../docweave/render.py) · 468 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave`](docweave.md), [`docweave.changelog`](docweave.changelog.md), [`docweave.drift`](docweave.drift.md), [`docweave.engine`](docweave.engine.md), [`docweave.graph`](docweave.graph.md), [`docweave.linker`](docweave.linker.md), [`docweave.model`](docweave.model.md), [`docweave.nlp.describe`](docweave.nlp.describe.md), [`docweave.nlp.docstring`](docweave.nlp.docstring.md), [`docweave.nlp.intent`](docweave.nlp.intent.md), [`docweave.nlp.rationale`](docweave.nlp.rationale.md), [`docweave.nlp.text`](docweave.nlp.text.md), [`docweave.regions`](docweave.regions.md)
 
@@ -64,7 +64,13 @@ Turns one analysis into the blocks of every documentation page.
 | --- | --- |
 | `analysis` | `Analysis` |
 
-<sub>[`docweave/render.py:47`](../../docweave/render.py#L47)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:47`](../../docweave/render.py#L47) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer -->
 
 <!-- docweave:begin sym:Renderer.module_page -->
@@ -83,7 +89,13 @@ Path of the API page for a module.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:59`](../../docweave/render.py#L59) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:59`](../../docweave/render.py#L59) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.module_page -->
 
 <!-- docweave:begin sym:Renderer.rel -->
@@ -103,7 +115,13 @@ Relative link from ``page`` to ``target`` (both relative to the project root).
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:63`](../../docweave/render.py#L63) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:63`](../../docweave/render.py#L63) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.rel -->
 
 <!-- docweave:begin sym:Renderer.symbol_link -->
@@ -123,7 +141,13 @@ Markdown link to a symbol's reference entry, or plain code if it has none.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:67`](../../docweave/render.py#L67) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:67`](../../docweave/render.py#L67) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.symbol_link -->
 
 <!-- docweave:begin sym:Renderer.message_ref -->
@@ -142,7 +166,13 @@ A message's label, linked to its URL when it has one.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:74`](../../docweave/render.py#L74) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:74`](../../docweave/render.py#L74) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.message_ref -->
 
 <!-- docweave:begin sym:Renderer.summary_of -->
@@ -161,7 +191,13 @@ One-line description of a symbol and where it came from: doc | ai | inferred.
 
 **Returns:** `tuple[str, str]`
 
-<sub>[`docweave/render.py:79`](../../docweave/render.py#L79) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:79`](../../docweave/render.py#L79) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.summary_of -->
 
 <!-- docweave:begin sym:Renderer.module_summary -->
@@ -180,7 +216,13 @@ First sentence of the module docstring, or a list of what it defines.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:87`](../../docweave/render.py#L87) · complexity 7</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:87`](../../docweave/render.py#L87) · complexity 7 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.module_summary -->
 
 <!-- docweave:begin sym:Renderer.module_owners -->
@@ -199,7 +241,13 @@ The top three authors of a module by surviving lines.
 
 **Returns:** `list[tuple[str, float]]`
 
-<sub>[`docweave/render.py:94`](../../docweave/render.py#L94) · complexity 6</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:94`](../../docweave/render.py#L94) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.module_owners -->
 
 <!-- docweave:begin sym:Renderer.coverable -->
@@ -218,7 +266,13 @@ The module's visible classes, functions and methods - what documentation coverag
 
 **Returns:** `list[Symbol]`
 
-<sub>[`docweave/render.py:109`](../../docweave/render.py#L109) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:109`](../../docweave/render.py#L109) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.coverable -->
 
 <!-- docweave:begin sym:Renderer.visible_modules -->
@@ -233,7 +287,13 @@ Modules that get a page: those with visible symbols or a docstring.
 
 **Returns:** `list[Module]`
 
-<sub>[`docweave/render.py:113`](../../docweave/render.py#L113) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:113`](../../docweave/render.py#L113) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.visible_modules -->
 
 <!-- docweave:begin sym:Renderer.pages -->
@@ -248,7 +308,13 @@ Every page of the site, keyed by its path relative to the project root.
 
 **Returns:** `dict[str, Blocks]`
 
-<sub>[`docweave/render.py:119`](../../docweave/render.py#L119) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:119`](../../docweave/render.py#L119) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.pages -->
 
 <!-- docweave:begin sym:Renderer.health_line -->
@@ -267,7 +333,13 @@ One-line health badge linking to the full report.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:134`](../../docweave/render.py#L134) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:134`](../../docweave/render.py#L134) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.health_line -->
 
 <!-- docweave:begin sym:Renderer.module_table -->
@@ -286,7 +358,13 @@ Table of modules with summary, API size, coverage and main authors.
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:142`](../../docweave/render.py#L142) · complexity 9</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:142`](../../docweave/render.py#L142) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.module_table -->
 
 <!-- docweave:begin sym:Renderer.recent_changes -->
@@ -306,7 +384,13 @@ The latest meaningful commits (formatting and chores are skipped) with the API t
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:156`](../../docweave/render.py#L156) · complexity 9</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:156`](../../docweave/render.py#L156) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.recent_changes -->
 
 <!-- docweave:begin sym:Renderer.index_page -->
@@ -321,7 +405,13 @@ Landing page: health, project size, module table and recent changes.
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:169`](../../docweave/render.py#L169) · complexity 8</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:169`](../../docweave/render.py#L169) · complexity 8 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.index_page -->
 
 <!-- docweave:begin sym:Renderer.symbol_block -->
@@ -341,7 +431,13 @@ Reference entry for one symbol: signature, drift warnings, description, paramete
 
 **Returns:** `str`
 
-<sub>[`docweave/render.py:188`](../../docweave/render.py#L188) · complexity 41</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:188`](../../docweave/render.py#L188) · complexity 41 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.symbol_block -->
 
 <!-- docweave:begin sym:Renderer.history -->
@@ -362,7 +458,13 @@ The communication linked to a symbol, phrased as an annotated timeline.
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/render.py:243`](../../docweave/render.py#L243) · complexity 12</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:243`](../../docweave/render.py#L243) · complexity 12 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.history -->
 
 <!-- docweave:begin sym:Renderer.api_page -->
@@ -381,7 +483,13 @@ Reference page for one module: header, table of contents, then one block per sym
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:262`](../../docweave/render.py#L262) · complexity 18</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:262`](../../docweave/render.py#L262) · complexity 18 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.api_page -->
 
 <!-- docweave:begin sym:Renderer.architecture_page -->
@@ -396,7 +504,13 @@ Dependency graph, import cycles, coupling table and churn-times-complexity hotsp
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:292`](../../docweave/render.py#L292) · complexity 22</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:292`](../../docweave/render.py#L292) · complexity 22 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.architecture_page -->
 
 <!-- docweave:begin sym:Renderer.changelog_page -->
@@ -411,7 +525,13 @@ Changelog with one block per release, each entry annotated with the API it touch
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:329`](../../docweave/render.py#L329) · complexity 11</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:329`](../../docweave/render.py#L329) · complexity 11 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.changelog_page -->
 
 <!-- docweave:begin sym:Renderer.decisions_page -->
@@ -426,7 +546,13 @@ Decision log: messages that explain a choice, newest first, linked to the code t
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:351`](../../docweave/render.py#L351) · complexity 17</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:351`](../../docweave/render.py#L351) · complexity 17 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.decisions_page -->
 
 <!-- docweave:begin sym:Renderer.health_page -->
@@ -441,7 +567,13 @@ Health report: score, every drift issue by severity, and per-module coverage.
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:377`](../../docweave/render.py#L377) · complexity 16</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:377`](../../docweave/render.py#L377) · complexity 16 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.health_page -->
 
 <!-- docweave:begin sym:Renderer.inject_blocks -->
@@ -460,7 +592,13 @@ Blocks that can be embedded in hand-written files (README etc.) via region marke
 
 **Returns:** `Blocks`
 
-<sub>[`docweave/render.py:411`](../../docweave/render.py#L411) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:411`](../../docweave/render.py#L411) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.inject_blocks -->
 
 <!-- docweave:begin sym:render -->
@@ -479,7 +617,13 @@ Produce the final text of every documentation file, merged with what is already 
 
 **Returns:** `dict[str, str]`
 
-<sub>[`docweave/render.py:421`](../../docweave/render.py#L421) · complexity 6</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:421`](../../docweave/render.py#L421) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:render -->
 
 <!-- docweave:begin sym:stale_pages -->
@@ -499,7 +643,13 @@ Compare rendered ``files`` with disk: returns (changed or new files, orphaned AP
 
 **Returns:** `tuple[list[str], list[str]]`
 
-<sub>[`docweave/render.py:440`](../../docweave/render.py#L440) · complexity 9</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:440`](../../docweave/render.py#L440) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:stale_pages -->
 
 <!-- docweave:begin sym:write -->
@@ -519,5 +669,11 @@ Write changed files, delete API pages for modules that no longer exist; return b
 
 **Returns:** `tuple[list[str], list[str]]`
 
-<sub>[`docweave/render.py:458`](../../docweave/render.py#L458) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/render.py:458`](../../docweave/render.py#L458) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:write -->

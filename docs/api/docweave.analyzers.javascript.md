@@ -13,7 +13,7 @@ constants or to ``exports.x``, classes with their methods and arrow-function pro
 TypeScript interfaces, type aliases and enums, JSDoc blocks, and ES / CommonJS imports and exports.
 Declarations nested inside other functions are deliberately ignored.
 
-Source: [`docweave/analyzers/javascript.py`](../../docweave/analyzers/javascript.py) · 432 lines
+Source: [`docweave/analyzers/javascript.py`](../../docweave/analyzers/javascript.py) · 432 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.model`](docweave.model.md)
 
@@ -45,7 +45,13 @@ Extensions setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/analyzers/javascript.py:23`](../../docweave/analyzers/javascript.py#L23)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/javascript.py:23`](../../docweave/analyzers/javascript.py#L23) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:EXTENSIONS -->
 
 <!-- docweave:begin sym:module_name -->
@@ -64,7 +70,13 @@ Dotted module name for a JS/TS file path (``src/cart/index.ts`` -> ``cart``).
 
 **Returns:** `str`
 
-<sub>[`docweave/analyzers/javascript.py:51`](../../docweave/analyzers/javascript.py#L51) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/javascript.py:51`](../../docweave/analyzers/javascript.py#L51) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:module_name -->
 
 <!-- docweave:begin sym:mask -->
@@ -84,7 +96,13 @@ Replace comments (and optionally string contents) with spaces, preserving offset
 
 **Returns:** `str`
 
-<sub>[`docweave/analyzers/javascript.py:66`](../../docweave/analyzers/javascript.py#L66) · complexity 17</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/javascript.py:66`](../../docweave/analyzers/javascript.py#L66) · complexity 17 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:mask -->
 
 <!-- docweave:begin sym:analyze -->
@@ -104,5 +122,11 @@ Scan one JS/TS file into a :class:`Module`.
 
 **Returns:** `Module`
 
-<sub>[`docweave/analyzers/javascript.py:410`](../../docweave/analyzers/javascript.py#L410) · complexity 10</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/javascript.py:410`](../../docweave/analyzers/javascript.py#L410) · complexity 10 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:analyze -->

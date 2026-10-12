@@ -7,7 +7,7 @@ The point is not pretty rendering: it is to recover what the documentation *clai
 function (its parameters, return value and exceptions) so those claims can be checked against
 what static analysis says the code actually does.
 
-Source: [`docweave/nlp/docstring.py`](../../docweave/nlp/docstring.py) · 171 lines
+Source: [`docweave/nlp/docstring.py`](../../docweave/nlp/docstring.py) · 171 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.nlp.text`](docweave.nlp.text.md)
 
@@ -42,7 +42,13 @@ Param heads setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/docstring.py:16`](../../docweave/nlp/docstring.py#L16)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:16`](../../docweave/nlp/docstring.py#L16) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:PARAM_HEADS -->
 
 <!-- docweave:begin sym:RETURN_HEADS -->
@@ -57,7 +63,13 @@ Return heads setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/docstring.py:17`](../../docweave/nlp/docstring.py#L17)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:17`](../../docweave/nlp/docstring.py#L17) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:RETURN_HEADS -->
 
 <!-- docweave:begin sym:RAISE_HEADS -->
@@ -72,7 +84,13 @@ Raise heads setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/docstring.py:18`](../../docweave/nlp/docstring.py#L18)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:18`](../../docweave/nlp/docstring.py#L18) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:RAISE_HEADS -->
 
 <!-- docweave:begin sym:OTHER_HEADS -->
@@ -87,7 +105,13 @@ Other heads setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/docstring.py:19`](../../docweave/nlp/docstring.py#L19)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:19`](../../docweave/nlp/docstring.py#L19) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:OTHER_HEADS -->
 
 <!-- docweave:begin sym:ALL_HEADS -->
@@ -102,7 +126,13 @@ All heads setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/nlp/docstring.py:23`](../../docweave/nlp/docstring.py#L23)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:23`](../../docweave/nlp/docstring.py#L23) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:ALL_HEADS -->
 
 <!-- docweave:begin sym:DocInfo -->
@@ -116,7 +146,13 @@ class DocInfo
 
 The claims a docstring makes, in structured form.
 
-<sub>[`docweave/nlp/docstring.py:41`](../../docweave/nlp/docstring.py#L41)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:41`](../../docweave/nlp/docstring.py#L41) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:DocInfo -->
 
 <!-- docweave:begin sym:parse_docstring -->
@@ -135,5 +171,11 @@ Parse a docstring of any supported style into a :class:`DocInfo`.
 
 **Returns:** `DocInfo`
 
-<sub>[`docweave/nlp/docstring.py:96`](../../docweave/nlp/docstring.py#L96) · complexity 48</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/docstring.py:96`](../../docweave/nlp/docstring.py#L96) · complexity 48 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:parse_docstring -->

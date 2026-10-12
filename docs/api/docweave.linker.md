@@ -13,7 +13,7 @@ Three independent kinds of evidence are combined (noisy-OR) into one confidence 
 
 Pull requests and issues additionally inherit the links of commits that reference them (``#12``).
 
-Source: [`docweave/linker.py`](../../docweave/linker.py) · 188 lines
+Source: [`docweave/linker.py`](../../docweave/linker.py) · 188 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.gitrepo`](docweave.gitrepo.md), [`docweave.model`](docweave.model.md), [`docweave.nlp.index`](docweave.nlp.index.md), [`docweave.nlp.text`](docweave.nlp.text.md)
 
@@ -49,7 +49,13 @@ Min confidence setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/linker.py:28`](../../docweave/linker.py#L28)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:28`](../../docweave/linker.py#L28) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:MIN_CONFIDENCE -->
 
 <!-- docweave:begin sym:BlameInfo -->
@@ -63,7 +69,13 @@ class BlameInfo
 
 Which commits last wrote each part of a symbol.
 
-<sub>[`docweave/linker.py:32`](../../docweave/linker.py#L32)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:32`](../../docweave/linker.py#L32) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:BlameInfo -->
 
 <!-- docweave:begin sym:symbol_blame -->
@@ -83,7 +95,13 @@ Attribute every line of every symbol to the commit that last wrote it.
 
 **Returns:** `dict[str, BlameInfo]`
 
-<sub>[`docweave/linker.py:40`](../../docweave/linker.py#L40) · complexity 14</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:40`](../../docweave/linker.py#L40) · complexity 14 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:symbol_blame -->
 
 <!-- docweave:begin sym:is_distinctive -->
@@ -102,7 +120,13 @@ Would this name, seen in running prose, plausibly be a reference to code?
 
 **Returns:** `bool`
 
-<sub>[`docweave/linker.py:67`](../../docweave/linker.py#L67) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:67`](../../docweave/linker.py#L67) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:is_distinctive -->
 
 <!-- docweave:begin sym:Linker -->
@@ -121,7 +145,13 @@ Scores every (message, symbol) pair from blame, mentions and wording similarity.
 | `messages` | `dict[str, Message]` |
 | `blame_info` | `dict[str, BlameInfo]` |
 
-<sub>[`docweave/linker.py:80`](../../docweave/linker.py#L80)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:80`](../../docweave/linker.py#L80) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Linker -->
 
 <!-- docweave:begin sym:Linker.mentions -->
@@ -140,7 +170,13 @@ Symbols a message names explicitly, with the strength of each mention.
 
 **Returns:** `dict[str, float]`
 
-<sub>[`docweave/linker.py:100`](../../docweave/linker.py#L100) · complexity 18</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:100`](../../docweave/linker.py#L100) · complexity 18 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Linker.mentions -->
 
 <!-- docweave:begin sym:Linker.run -->
@@ -155,7 +191,13 @@ Compute links for every symbol, newest message first.
 
 **Returns:** `dict[str, list[Link]]`
 
-<sub>[`docweave/linker.py:123`](../../docweave/linker.py#L123) · complexity 29</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:123`](../../docweave/linker.py#L123) · complexity 29 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Linker.run -->
 
 <!-- docweave:begin sym:owners -->
@@ -176,5 +218,11 @@ Authors of the surviving lines of a symbol, as ``(name, share)`` pairs.
 
 **Returns:** `list[tuple[str, float]]`
 
-<sub>[`docweave/linker.py:178`](../../docweave/linker.py#L178) · complexity 7</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/linker.py:178`](../../docweave/linker.py#L178) · complexity 7 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:owners -->

@@ -3,7 +3,7 @@
 
 Configuration: defaults, overridden by ``docweave.toml`` or ``[tool.docweave]`` in pyproject.
 
-Source: [`docweave/config.py`](../../docweave/config.py) · 85 lines
+Source: [`docweave/config.py`](../../docweave/config.py) · 85 lines · main authors: AashutoshR (100%)
 
 **Imported by:** [`docweave.analyzers`](docweave.analyzers.md), [`docweave.changelog`](docweave.changelog.md), [`docweave.cli`](docweave.cli.md), [`docweave.drift`](docweave.drift.md), [`docweave.engine`](docweave.engine.md), [`docweave.hooks`](docweave.hooks.md)
 <!-- docweave:end module -->
@@ -35,7 +35,13 @@ Default exclude setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/config.py:9`](../../docweave/config.py#L9)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:9`](../../docweave/config.py#L9) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:DEFAULT_EXCLUDE -->
 
 <!-- docweave:begin sym:CONFIG_TEMPLATE -->
@@ -50,7 +56,13 @@ Config template setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/config.py:16`](../../docweave/config.py#L16)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:16`](../../docweave/config.py#L16) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:CONFIG_TEMPLATE -->
 
 <!-- docweave:begin sym:Config -->
@@ -64,7 +76,13 @@ class Config
 
 Resolved settings for one project.
 
-<sub>[`docweave/config.py:33`](../../docweave/config.py#L33)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:33`](../../docweave/config.py#L33) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Config -->
 
 <!-- docweave:begin sym:Config.excludes -->
@@ -80,7 +98,13 @@ Built-in exclude patterns plus the project's own.
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/config.py:51`](../../docweave/config.py#L51) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:51`](../../docweave/config.py#L51) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Config.excludes -->
 
 <!-- docweave:begin sym:Config.state_dir -->
@@ -96,7 +120,13 @@ Folder for DocWeave's own state (signature anchors, AI cache).
 
 **Returns:** `Path`
 
-<sub>[`docweave/config.py:56`](../../docweave/config.py#L56) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:56`](../../docweave/config.py#L56) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Config.state_dir -->
 
 <!-- docweave:begin sym:load_config -->
@@ -118,5 +148,11 @@ Load configuration for the project at ``root``, applying non-None ``overrides`` 
 
 **Raises:** `ValueError`
 
-<sub>[`docweave/config.py:61`](../../docweave/config.py#L61) · complexity 10</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/config.py:61`](../../docweave/config.py#L61) · complexity 10 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:load_config -->

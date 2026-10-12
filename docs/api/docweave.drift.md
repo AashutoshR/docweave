@@ -15,7 +15,7 @@ Five independent detectors, from most to least certain:
 5. **Anchored signatures** - without git, a state file remembers the signature each docstring
    was written against.
 
-Source: [`docweave/drift.py`](../../docweave/drift.py) · 395 lines
+Source: [`docweave/drift.py`](../../docweave/drift.py) · 395 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.analyzers`](docweave.analyzers.md), [`docweave.config`](docweave.config.md), [`docweave.gitrepo`](docweave.gitrepo.md), [`docweave.linker`](docweave.linker.md), [`docweave.model`](docweave.model.md), [`docweave.nlp.docstring`](docweave.nlp.docstring.md), [`docweave.nlp.intent`](docweave.nlp.intent.md)
 
@@ -61,7 +61,13 @@ Severities setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/drift.py:33`](../../docweave/drift.py#L33)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:33`](../../docweave/drift.py#L33) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:SEVERITIES -->
 
 <!-- docweave:begin sym:ISSUE_HELP -->
@@ -76,7 +82,13 @@ Issue help setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/drift.py:44`](../../docweave/drift.py#L44)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:44`](../../docweave/drift.py#L44) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:ISSUE_HELP -->
 
 <!-- docweave:begin sym:Reference -->
@@ -90,7 +102,13 @@ class Reference
 
 A mention of code found in hand-written Markdown.
 
-<sub>[`docweave/drift.py:60`](../../docweave/drift.py#L60)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:60`](../../docweave/drift.py#L60) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Reference -->
 
 <!-- docweave:begin sym:Health -->
@@ -104,7 +122,13 @@ class Health
 
 Documentation quality in numbers.
 
-<sub>[`docweave/drift.py:70`](../../docweave/drift.py#L70)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:70`](../../docweave/drift.py#L70) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Health -->
 
 <!-- docweave:begin sym:Health.coverage -->
@@ -120,7 +144,13 @@ Share of public symbols that have documentation.
 
 **Returns:** `float`
 
-<sub>[`docweave/drift.py:79`](../../docweave/drift.py#L79) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:79`](../../docweave/drift.py#L79) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Health.coverage -->
 
 <!-- docweave:begin sym:check_claims -->
@@ -139,7 +169,13 @@ Compare what a docstring claims about a function with what the code does.
 
 **Returns:** `list[Issue]`
 
-<sub>[`docweave/drift.py:88`](../../docweave/drift.py#L88) · complexity 31</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:88`](../../docweave/drift.py#L88) · complexity 31 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:check_claims -->
 
 <!-- docweave:begin sym:check_staleness -->
@@ -160,7 +196,13 @@ Flag a docstring whose code was rewritten by meaningful commits after it was las
 
 **Returns:** `Issue | None`
 
-<sub>[`docweave/drift.py:150`](../../docweave/drift.py#L150) · complexity 15</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:150`](../../docweave/drift.py#L150) · complexity 15 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:check_staleness -->
 
 <!-- docweave:begin sym:name_index -->
@@ -179,7 +221,13 @@ Every way prose might spell a symbol: bare name, qualified name, fully dotted pa
 
 **Returns:** `dict[str, list[str]]`
 
-<sub>[`docweave/drift.py:174`](../../docweave/drift.py#L174) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:174`](../../docweave/drift.py#L174) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:name_index -->
 
 <!-- docweave:begin sym:resolve_name -->
@@ -200,7 +248,13 @@ Resolve a dotted name from prose to symbol ids, tolerating a partial module pref
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/drift.py:184`](../../docweave/drift.py#L184) · complexity 7</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:184`](../../docweave/drift.py#L184) · complexity 7 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:resolve_name -->
 
 <!-- docweave:begin sym:scan_markdown -->
@@ -223,7 +277,13 @@ spans. Generated output, changelogs and DocWeave-managed regions are skipped.
 
 **Returns:** `tuple[list[Reference], list[tuple[str, int, str]]]`
 
-<sub>[`docweave/drift.py:196`](../../docweave/drift.py#L196) · complexity 18</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:196`](../../docweave/drift.py#L196) · complexity 18 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:scan_markdown -->
 
 <!-- docweave:begin sym:check_references -->
@@ -250,7 +310,13 @@ Turn Markdown references into issues: dangling names, missing paths and stale pr
 
 **Returns:** `list[Issue]`
 
-<sub>[`docweave/drift.py:232`](../../docweave/drift.py#L232) · complexity 45</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:232`](../../docweave/drift.py#L232) · complexity 45 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:check_references -->
 
 <!-- docweave:begin sym:load_state -->
@@ -269,7 +335,13 @@ Read the signature anchors saved by the last ``generate`` (empty if there are no
 
 **Returns:** `dict`
 
-<sub>[`docweave/drift.py:310`](../../docweave/drift.py#L310) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:310`](../../docweave/drift.py#L310) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:load_state -->
 
 <!-- docweave:begin sym:next_state -->
@@ -289,7 +361,13 @@ Remember, per symbol, the signature its current docstring was written against.
 
 **Returns:** `dict`
 
-<sub>[`docweave/drift.py:319`](../../docweave/drift.py#L319) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:319`](../../docweave/drift.py#L319) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:next_state -->
 
 <!-- docweave:begin sym:save_state -->
@@ -309,7 +387,13 @@ Persist signature anchors so the next run can compare against them.
 
 **Returns:** `None`
 
-<sub>[`docweave/drift.py:330`](../../docweave/drift.py#L330) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:330`](../../docweave/drift.py#L330) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:save_state -->
 
 <!-- docweave:begin sym:check_anchors -->
@@ -329,7 +413,13 @@ Flag documented symbols whose signature differs from the one their docstring was
 
 **Returns:** `list[Issue]`
 
-<sub>[`docweave/drift.py:337`](../../docweave/drift.py#L337) · complexity 6</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:337`](../../docweave/drift.py#L337) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:check_anchors -->
 
 <!-- docweave:begin sym:is_documented -->
@@ -348,7 +438,13 @@ True if the symbol has a non-empty docstring.
 
 **Returns:** `bool`
 
-<sub>[`docweave/drift.py:350`](../../docweave/drift.py#L350) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:350`](../../docweave/drift.py#L350) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:is_documented -->
 
 <!-- docweave:begin sym:detect -->
@@ -374,7 +470,13 @@ Run every detector and return de-duplicated issues, most severe first.
 
 **Returns:** `tuple[list[Issue], list[Reference]]`
 
-<sub>[`docweave/drift.py:355`](../../docweave/drift.py#L355) · complexity 14</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:355`](../../docweave/drift.py#L355) · complexity 14 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:detect -->
 
 <!-- docweave:begin sym:health -->
@@ -398,5 +500,11 @@ comment but are not held against the score when they do not.
 
 **Returns:** `Health`
 
-<sub>[`docweave/drift.py:382`](../../docweave/drift.py#L382) · complexity 13</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/drift.py:382`](../../docweave/drift.py#L382) · complexity 13 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:health -->

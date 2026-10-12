@@ -3,7 +3,7 @@
 
 Keep docs in sync automatically: a git pre-commit hook and a CI workflow template.
 
-Source: [`docweave/hooks.py`](../../docweave/hooks.py) · 98 lines
+Source: [`docweave/hooks.py`](../../docweave/hooks.py) · 98 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.config`](docweave.config.md)
 
@@ -36,7 +36,13 @@ Marker setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/hooks.py:11`](../../docweave/hooks.py#L11)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/hooks.py:11`](../../docweave/hooks.py#L11) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:MARKER -->
 
 <!-- docweave:begin sym:CI_WORKFLOW -->
@@ -51,7 +57,13 @@ Ci workflow setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/hooks.py:13`](../../docweave/hooks.py#L13)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/hooks.py:13`](../../docweave/hooks.py#L13) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:CI_WORKFLOW -->
 
 <!-- docweave:begin sym:install_hook -->
@@ -78,7 +90,13 @@ regenerates the docs and stages them, so docs travel in the same commit as the c
 
 **Raises:** `RuntimeError`
 
-<sub>[`docweave/hooks.py:59`](../../docweave/hooks.py#L59) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/hooks.py:59`](../../docweave/hooks.py#L59) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:install_hook -->
 
 <!-- docweave:begin sym:uninstall_hook -->
@@ -97,7 +115,13 @@ Remove the pre-commit hook if DocWeave installed it; returns whether anything wa
 
 **Returns:** `bool`
 
-<sub>[`docweave/hooks.py:83`](../../docweave/hooks.py#L83) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/hooks.py:83`](../../docweave/hooks.py#L83) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:uninstall_hook -->
 
 <!-- docweave:begin sym:write_ci -->
@@ -116,5 +140,11 @@ Write the GitHub Actions workflow and return its path.
 
 **Returns:** `Path`
 
-<sub>[`docweave/hooks.py:92`](../../docweave/hooks.py#L92) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/hooks.py:92`](../../docweave/hooks.py#L92) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:write_ci -->

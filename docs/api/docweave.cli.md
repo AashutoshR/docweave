@@ -3,7 +3,7 @@
 
 Command-line interface: ``docweave <command>``.
 
-Source: [`docweave/cli.py`](../../docweave/cli.py) · 339 lines
+Source: [`docweave/cli.py`](../../docweave/cli.py) · 339 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave`](docweave.md), [`docweave.analyzers`](docweave.analyzers.md), [`docweave.changelog`](docweave.changelog.md), [`docweave.comms`](docweave.comms.md), [`docweave.config`](docweave.config.md), [`docweave.drift`](docweave.drift.md), [`docweave.engine`](docweave.engine.md), [`docweave.gitrepo`](docweave.gitrepo.md), [`docweave.hooks`](docweave.hooks.md), [`docweave.linker`](docweave.linker.md), [`docweave.llm`](docweave.llm.md), [`docweave.nlp.intent`](docweave.nlp.intent.md), [`docweave.nlp.rationale`](docweave.nlp.rationale.md), [`docweave.render`](docweave.render.md), [`docweave.search`](docweave.search.md)
 
@@ -46,7 +46,13 @@ Write a starter docweave.toml and, on request, the CI workflow and git hook.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:73`](../../docweave/cli.py#L73) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:73`](../../docweave/cli.py#L73) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_init -->
 
 <!-- docweave:begin sym:cmd_generate -->
@@ -65,7 +71,13 @@ Analyse the project and write the documentation site.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:90`](../../docweave/cli.py#L90) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:90`](../../docweave/cli.py#L90) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_generate -->
 
 <!-- docweave:begin sym:cmd_check -->
@@ -84,7 +96,13 @@ Report drift in the chosen format and return 1 if anything reaches the failure t
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:96`](../../docweave/cli.py#L96) · complexity 26</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:96`](../../docweave/cli.py#L96) · complexity 26 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_check -->
 
 <!-- docweave:begin sym:cmd_why -->
@@ -103,7 +121,13 @@ Print who wrote a symbol, what is wrong with its docs, and the discussion linked
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:145`](../../docweave/cli.py#L145) · complexity 14</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:145`](../../docweave/cli.py#L145) · complexity 14 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_why -->
 
 <!-- docweave:begin sym:cmd_ask -->
@@ -122,7 +146,13 @@ Answer a question with the best-matching symbols and discussions.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:169`](../../docweave/cli.py#L169) · complexity 8</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:169`](../../docweave/cli.py#L169) · complexity 8 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_ask -->
 
 <!-- docweave:begin sym:cmd_changelog -->
@@ -141,7 +171,13 @@ Print the changelog to standard output without writing any files.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:193`](../../docweave/cli.py#L193) · complexity 9</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:193`](../../docweave/cli.py#L193) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_changelog -->
 
 <!-- docweave:begin sym:cmd_hook -->
@@ -160,7 +196,13 @@ Install or remove the pre-commit hook.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:211`](../../docweave/cli.py#L211) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:211`](../../docweave/cli.py#L211) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_hook -->
 
 <!-- docweave:begin sym:cmd_comms -->
@@ -179,7 +221,13 @@ Export pull requests and issues from GitHub into the comms folder.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:225`](../../docweave/cli.py#L225) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:225`](../../docweave/cli.py#L225) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_comms -->
 
 <!-- docweave:begin sym:cmd_watch -->
@@ -198,7 +246,13 @@ Poll source and Markdown files and regenerate the docs whenever one changes.
 
 **Returns:** `int`
 
-<sub>[`docweave/cli.py:237`](../../docweave/cli.py#L237) · complexity 16</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:237`](../../docweave/cli.py#L237) · complexity 16 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cmd_watch -->
 
 <!-- docweave:begin sym:build_parser -->
@@ -213,7 +267,13 @@ Define the command-line interface.
 
 **Returns:** `argparse.ArgumentParser`
 
-<sub>[`docweave/cli.py:265`](../../docweave/cli.py#L265) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:265`](../../docweave/cli.py#L265) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:build_parser -->
 
 <!-- docweave:begin sym:main -->
@@ -234,5 +294,11 @@ Entry point: parse arguments, run the command, return its exit code.
 
 **Raises:** `ValueError`
 
-<sub>[`docweave/cli.py:326`](../../docweave/cli.py#L326) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/cli.py:326`](../../docweave/cli.py#L326) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:main -->

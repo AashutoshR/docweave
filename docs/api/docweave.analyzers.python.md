@@ -3,7 +3,7 @@
 
 Static analysis of Python source using the standard ``ast`` module.
 
-Source: [`docweave/analyzers/python.py`](../../docweave/analyzers/python.py) · 242 lines
+Source: [`docweave/analyzers/python.py`](../../docweave/analyzers/python.py) · 242 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.model`](docweave.model.md)
 
@@ -34,7 +34,13 @@ Extensions setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/analyzers/python.py:11`](../../docweave/analyzers/python.py#L11)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/python.py:11`](../../docweave/analyzers/python.py#L11) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:EXTENSIONS -->
 
 <!-- docweave:begin sym:module_name -->
@@ -53,7 +59,13 @@ Dotted module name for a Python file path (``src/pkg/mod.py`` -> ``pkg.mod``).
 
 **Returns:** `str`
 
-<sub>[`docweave/analyzers/python.py:14`](../../docweave/analyzers/python.py#L14) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/python.py:14`](../../docweave/analyzers/python.py#L14) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:module_name -->
 
 <!-- docweave:begin sym:analyze -->
@@ -73,5 +85,11 @@ Parse one Python file into a :class:`Module` with all of its documentable symbol
 
 **Returns:** `Module`
 
-<sub>[`docweave/analyzers/python.py:210`](../../docweave/analyzers/python.py#L210) · complexity 21</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/analyzers/python.py:210`](../../docweave/analyzers/python.py#L210) · complexity 21 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:analyze -->

@@ -3,7 +3,7 @@
 
 A small inverted index offering BM25 ranking and TF-IDF cosine similarity.
 
-Source: [`docweave/nlp/index.py`](../../docweave/nlp/index.py) · 63 lines
+Source: [`docweave/nlp/index.py`](../../docweave/nlp/index.py) · 63 lines · main authors: AashutoshR (100%)
 
 **Imported by:** [`docweave.linker`](docweave.linker.md), [`docweave.search`](docweave.search.md)
 <!-- docweave:end module -->
@@ -32,7 +32,13 @@ class TextIndex
 
 An in-memory inverted index over tokenised documents.
 
-<sub>[`docweave/nlp/index.py:9`](../../docweave/nlp/index.py#L9)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/index.py:9`](../../docweave/nlp/index.py#L9) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:TextIndex -->
 
 <!-- docweave:begin sym:TextIndex.add -->
@@ -52,7 +58,13 @@ Add a document; call :meth:`finalize` once all documents are in.
 
 **Returns:** `None`
 
-<sub>[`docweave/nlp/index.py:20`](../../docweave/nlp/index.py#L20) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/index.py:20`](../../docweave/nlp/index.py#L20) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:TextIndex.add -->
 
 <!-- docweave:begin sym:TextIndex.finalize -->
@@ -67,7 +79,13 @@ Compute IDF weights and document norms. Must be called before querying.
 
 **Returns:** `'TextIndex'`
 
-<sub>[`docweave/nlp/index.py:29`](../../docweave/nlp/index.py#L29) · complexity 7</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/index.py:29`](../../docweave/nlp/index.py#L29) · complexity 7 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:TextIndex.finalize -->
 
 <!-- docweave:begin sym:TextIndex.bm25 -->
@@ -89,7 +107,13 @@ Rank documents against ``query`` with Okapi BM25; returns the top ``k`` as ``(id
 
 **Returns:** `list[tuple[str, float]]`
 
-<sub>[`docweave/nlp/index.py:39`](../../docweave/nlp/index.py#L39) · complexity 4</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/index.py:39`](../../docweave/nlp/index.py#L39) · complexity 4 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:TextIndex.bm25 -->
 
 <!-- docweave:begin sym:TextIndex.cosine -->
@@ -110,5 +134,11 @@ TF-IDF cosine similarity of ``query`` to each document, optionally only those in
 
 **Returns:** `list[tuple[str, float]]`
 
-<sub>[`docweave/nlp/index.py:50`](../../docweave/nlp/index.py#L50) · complexity 11</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/nlp/index.py:50`](../../docweave/nlp/index.py#L50) · complexity 11 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:TextIndex.cosine -->

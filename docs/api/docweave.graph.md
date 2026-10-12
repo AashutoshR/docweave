@@ -3,7 +3,7 @@
 
 Module dependency graph: internal edges, external dependencies, cycles and a Mermaid drawing.
 
-Source: [`docweave/graph.py`](../../docweave/graph.py) · 121 lines
+Source: [`docweave/graph.py`](../../docweave/graph.py) · 121 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.model`](docweave.model.md)
 
@@ -39,7 +39,13 @@ Map each module to the project modules it imports.
 
 **Returns:** `dict[str, set[str]]`
 
-<sub>[`docweave/graph.py:13`](../../docweave/graph.py#L13) · complexity 7</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/graph.py:13`](../../docweave/graph.py#L13) · complexity 7 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:internal_edges -->
 
 <!-- docweave:begin sym:external_dependencies -->
@@ -58,7 +64,13 @@ Third-party packages the project imports (standard-library modules are left out)
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/graph.py:25`](../../docweave/graph.py#L25) · complexity 11</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/graph.py:25`](../../docweave/graph.py#L25) · complexity 11 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:external_dependencies -->
 
 <!-- docweave:begin sym:cycles -->
@@ -77,7 +89,13 @@ Import cycles, as strongly connected components with more than one module (Tarja
 
 **Returns:** `list[list[str]]`
 
-<sub>[`docweave/graph.py:43`](../../docweave/graph.py#L43) · complexity 13</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/graph.py:43`](../../docweave/graph.py#L43) · complexity 13 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:cycles -->
 
 <!-- docweave:begin sym:mermaid -->
@@ -97,5 +115,11 @@ Draw the dependency graph; large projects are collapsed to one node per package.
 
 **Returns:** `str`
 
-<sub>[`docweave/graph.py:95`](../../docweave/graph.py#L95) · complexity 17</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/graph.py:95`](../../docweave/graph.py#L95) · complexity 17 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:mermaid -->

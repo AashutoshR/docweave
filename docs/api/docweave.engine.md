@@ -3,7 +3,7 @@
 
 The analysis pipeline: code structure + developer communication -> one linked model.
 
-Source: [`docweave/engine.py`](../../docweave/engine.py) · 99 lines
+Source: [`docweave/engine.py`](../../docweave/engine.py) · 99 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave`](docweave.md), [`docweave.analyzers`](docweave.analyzers.md), [`docweave.comms`](docweave.comms.md), [`docweave.config`](docweave.config.md), [`docweave.drift`](docweave.drift.md), [`docweave.gitrepo`](docweave.gitrepo.md), [`docweave.graph`](docweave.graph.md), [`docweave.linker`](docweave.linker.md), [`docweave.model`](docweave.model.md), [`docweave.nlp.intent`](docweave.nlp.intent.md)
 
@@ -35,7 +35,13 @@ class Analysis
 
 Everything known about a project after one run: code, communication, links and drift.
 
-<sub>[`docweave/engine.py:20`](../../docweave/engine.py#L20)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/engine.py:20`](../../docweave/engine.py#L20) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Analysis -->
 
 <!-- docweave:begin sym:Analysis.visible -->
@@ -54,7 +60,13 @@ Whether a symbol belongs in the generated docs.
 
 **Returns:** `bool`
 
-<sub>[`docweave/engine.py:38`](../../docweave/engine.py#L38) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/engine.py:38`](../../docweave/engine.py#L38) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Analysis.visible -->
 
 <!-- docweave:begin sym:Analysis.symbols_of -->
@@ -73,7 +85,13 @@ Symbols a message is linked to, strongest link first.
 
 **Returns:** `list[tuple[str, float]]`
 
-<sub>[`docweave/engine.py:42`](../../docweave/engine.py#L42) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/engine.py:42`](../../docweave/engine.py#L42) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Analysis.symbols_of -->
 
 <!-- docweave:begin sym:Analysis.issues_for -->
@@ -92,7 +110,13 @@ Drift issues attached to one symbol.
 
 **Returns:** `list[Issue]`
 
-<sub>[`docweave/engine.py:52`](../../docweave/engine.py#L52) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/engine.py:52`](../../docweave/engine.py#L52) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Analysis.issues_for -->
 
 <!-- docweave:begin sym:analyze -->
@@ -112,5 +136,11 @@ Run static analysis, read history and communication, link them, and detect drift
 
 **Returns:** `Analysis`
 
-<sub>[`docweave/engine.py:57`](../../docweave/engine.py#L57) · complexity 18</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/engine.py:57`](../../docweave/engine.py#L57) · complexity 18 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:analyze -->

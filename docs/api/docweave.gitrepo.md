@@ -3,7 +3,7 @@
 
 Read developer communication and line-level authorship out of git.
 
-Source: [`docweave/gitrepo.py`](../../docweave/gitrepo.py) · 182 lines
+Source: [`docweave/gitrepo.py`](../../docweave/gitrepo.py) · 182 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave.model`](docweave.model.md)
 
@@ -44,7 +44,13 @@ Uncommitted setting.
 
 *No docstring in the source - this description is inferred from the name.*
 
-<sub>[`docweave/gitrepo.py:14`](../../docweave/gitrepo.py#L14)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:14`](../../docweave/gitrepo.py#L14) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:UNCOMMITTED -->
 
 <!-- docweave:begin sym:Removal -->
@@ -58,7 +64,13 @@ class Removal
 
 A definition that used to exist: which commit deleted it and what appeared in its place.
 
-<sub>[`docweave/gitrepo.py:24`](../../docweave/gitrepo.py#L24)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:24`](../../docweave/gitrepo.py#L24) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Removal -->
 
 <!-- docweave:begin sym:GitRepo -->
@@ -75,7 +87,13 @@ Thin, read-only wrapper around the ``git`` command line for one work tree.
 | --- | --- |
 | `root` | `Path` |
 
-<sub>[`docweave/gitrepo.py:41`](../../docweave/gitrepo.py#L41)</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:41`](../../docweave/gitrepo.py#L41) · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo -->
 
 <!-- docweave:begin sym:GitRepo.open -->
@@ -95,7 +113,13 @@ Return a repo handle if ``root`` is inside a git work tree that has at least one
 
 **Returns:** `'GitRepo | None'`
 
-<sub>[`docweave/gitrepo.py:48`](../../docweave/gitrepo.py#L48) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:48`](../../docweave/gitrepo.py#L48) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.open -->
 
 <!-- docweave:begin sym:GitRepo.log -->
@@ -114,7 +138,13 @@ Commits reachable from HEAD, newest first, with per-file line counts.
 
 **Returns:** `list[Message]`
 
-<sub>[`docweave/gitrepo.py:91`](../../docweave/gitrepo.py#L91) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:91`](../../docweave/gitrepo.py#L91) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.log -->
 
 <!-- docweave:begin sym:GitRepo.show -->
@@ -133,7 +163,13 @@ Look up specific commits (those that blame found beyond the history limit).
 
 **Returns:** `list[Message]`
 
-<sub>[`docweave/gitrepo.py:96`](../../docweave/gitrepo.py#L96) · complexity 2</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:96`](../../docweave/gitrepo.py#L96) · complexity 2 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.show -->
 
 <!-- docweave:begin sym:GitRepo.blame -->
@@ -152,7 +188,13 @@ Commit sha that last touched each line of ``rel`` (index 0 is line 1); None if u
 
 **Returns:** `list[str] | None`
 
-<sub>[`docweave/gitrepo.py:104`](../../docweave/gitrepo.py#L104) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:104`](../../docweave/gitrepo.py#L104) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.blame -->
 
 <!-- docweave:begin sym:GitRepo.blame_many -->
@@ -171,7 +213,13 @@ Blame several files concurrently; untracked files are left out.
 
 **Returns:** `dict[str, list[str]]`
 
-<sub>[`docweave/gitrepo.py:119`](../../docweave/gitrepo.py#L119) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:119`](../../docweave/gitrepo.py#L119) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.blame_many -->
 
 <!-- docweave:begin sym:GitRepo.removed_definitions -->
@@ -194,7 +242,13 @@ file are recorded as likely replacements (that is what a rename looks like in a 
 
 **Returns:** `dict[str, Removal]`
 
-<sub>[`docweave/gitrepo.py:125`](../../docweave/gitrepo.py#L125) · complexity 9</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:125`](../../docweave/gitrepo.py#L125) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.removed_definitions -->
 
 <!-- docweave:begin sym:GitRepo.staged_files -->
@@ -209,7 +263,13 @@ Paths with changes staged for the next commit.
 
 **Returns:** `list[str]`
 
-<sub>[`docweave/gitrepo.py:153`](../../docweave/gitrepo.py#L153) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:153`](../../docweave/gitrepo.py#L153) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.staged_files -->
 
 <!-- docweave:begin sym:GitRepo.deleted_files -->
@@ -228,7 +288,13 @@ Paths that history shows were deleted, mapped to the commit that deleted them.
 
 **Returns:** `dict[str, str]`
 
-<sub>[`docweave/gitrepo.py:157`](../../docweave/gitrepo.py#L157) · complexity 5</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:157`](../../docweave/gitrepo.py#L157) · complexity 5 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.deleted_files -->
 
 <!-- docweave:begin sym:GitRepo.web_url -->
@@ -243,7 +309,13 @@ Browser URL of the ``origin`` remote, for linking commits and pull requests.
 
 **Returns:** `str | None`
 
-<sub>[`docweave/gitrepo.py:167`](../../docweave/gitrepo.py#L167) · complexity 3</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:167`](../../docweave/gitrepo.py#L167) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:GitRepo.web_url -->
 
 <!-- docweave:begin sym:worktree_message -->
@@ -258,5 +330,11 @@ Stand-in 'commit' for lines that are modified but not committed yet.
 
 **Returns:** `Message`
 
-<sub>[`docweave/gitrepo.py:176`](../../docweave/gitrepo.py#L176) · complexity 1</sub>
+<details><summary>History and rationale (1)</summary>
+
+- 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
+
+</details>
+
+<sub>[`docweave/gitrepo.py:176`](../../docweave/gitrepo.py#L176) · complexity 1 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:worktree_message -->
