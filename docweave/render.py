@@ -355,7 +355,8 @@ class Renderer:
                                     "chat and notes. Each entry links the code it shaped.")]
         scored = []
         for msg in self.a.messages.values():
-            if msg.source == "worktree" or (msg.source == "commit" and is_docs_only(self.cfg, msg)):
+            # Housekeeping commits (docs, formatting, chores, tests) describe upkeep, not design.
+            if msg.source == "worktree" or (msg.source == "commit" and (is_docs_only(self.cfg, msg) or msg.intent in _QUIET_INTENTS)):
                 continue
             score = decision_score(msg.title, msg.body)
             if score >= 3.5:

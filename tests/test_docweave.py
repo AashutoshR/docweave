@@ -597,6 +597,18 @@ class DemoRepoTests(unittest.TestCase):
         self.assertIn("payflow/gateway.py", out)
         self.assertNotIn("web/cart.js", out)
 
+    def test_housekeeping_commits_are_not_design_decisions(self):
+        repo = self.copy()
+        readme = repo / "README.md"
+        readme.write_text(readme.read_text(encoding="utf-8") + "\nMore notes.\n", encoding="utf-8", newline="\n")
+        subprocess.run(["git", "add", "-A"], cwd=repo, check=True, capture_output=True)
+        subprocess.run(["git", "commit", "-q", "-m", "docs: refresh the notes\n\nWe decided to rewrite them because the decision log moved."],
+                       cwd=repo, check=True, capture_output=True)
+        pages = render.Renderer(analyze(load_config(repo))).decisions_page()
+        text = "\n".join(body for _id, body in pages)
+        self.assertNotIn("Refresh the notes", text)
+        self.assertIn("Rename convert_currency to convert", text)  # real decisions are still there
+
     def test_removed_module_page_is_cleaned_up(self):
         repo = self.copy()
         run_cli("generate", "--root", str(repo))
