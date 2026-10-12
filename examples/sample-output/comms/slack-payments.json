@@ -1,0 +1,17 @@
+[
+  {
+    "user_name": "lena",
+    "ts": "1769940000.000100",
+    "text": "Heads up: `convert_currency` is going away. We decided to move money maths to Decimal because float rounding lost cents on large invoices. The new name is `convert`."
+  },
+  {
+    "user_name": "marco",
+    "ts": "1769943600.000200",
+    "text": "Makes sense. Lunch at 12:30?"
+  },
+  {
+    "user_name": "priya",
+    "ts": "1771400000.000300",
+    "text": "Ledger.balance was rescanning every entry, which timed out for the big merchant accounts, so it is cached now instead of recomputed."
+  }
+]

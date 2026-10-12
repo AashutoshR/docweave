@@ -1,0 +1,22 @@
+[
+  {
+    "number": 4,
+    "title": "Retry charges on 429",
+    "author": {
+      "login": "priya"
+    },
+    "mergedAt": "2026-01-20T10:30:00Z",
+    "url": "https://github.com/example/payflow/pull/4",
+    "body": "Checkout failed outright whenever the provider answered 429.\n\nThe provider rate limits bursts, not sustained load, so a short wait almost always succeeds. We chose exponential backoff rather than a fixed delay because a fixed delay re-synchronises all the retrying checkouts into another burst."
+  },
+  {
+    "number": 7,
+    "title": "Include tax in cart totals",
+    "author": {
+      "login": "marco"
+    },
+    "mergedAt": "2026-03-03T15:00:00Z",
+    "url": "https://github.com/example/payflow/pull/7",
+    "body": "The cart showed net prices while the provider charged gross, which caused support tickets about being overcharged. `total` now takes a tax rate so that the cart and the charge agree."
+  }
+]

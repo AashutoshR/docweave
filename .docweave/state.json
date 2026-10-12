@@ -1,0 +1,941 @@
+{
+ "version": 1,
+ "symbols": {
+  "docweave.analyzers.javascript:EXTENSIONS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "4b148c5b8166"
+  },
+  "docweave.analyzers.javascript:_Scanner": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "2bb23e3c711d"
+  },
+  "docweave.analyzers.javascript:_Scanner.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "0c33e28bae58"
+  },
+  "docweave.analyzers.javascript:_Scanner.add": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c46d23548e92"
+  },
+  "docweave.analyzers.javascript:_Scanner.assigned_function": {
+   "doc": "087bfccdafa9",
+   "anchor": "bf85ded0b494"
+  },
+  "docweave.analyzers.javascript:_Scanner.callable_at": {
+   "doc": "65761ac3d927",
+   "anchor": "9a630edacc65"
+  },
+  "docweave.analyzers.javascript:_Scanner.line_of": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "19298df605c0"
+  },
+  "docweave.analyzers.javascript:_Scanner.scan": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "ad99020b9da3"
+  },
+  "docweave.analyzers.javascript:_expr_end": {
+   "doc": "fa210e3364dd",
+   "anchor": "efc6d905a9e8"
+  },
+  "docweave.analyzers.javascript:_jsdoc": {
+   "doc": "8e4eba98dcdc",
+   "anchor": "2d3892aef030"
+  },
+  "docweave.analyzers.javascript:_match": {
+   "doc": "c82977c11e5d",
+   "anchor": "53848f8559cf"
+  },
+  "docweave.analyzers.javascript:_sha": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "eb784c144c6d"
+  },
+  "docweave.analyzers.javascript:_skip_generics": {
+   "doc": "ea0011a9dd86",
+   "anchor": "980a51439fdc"
+  },
+  "docweave.analyzers.javascript:_skip_ws": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "2b28203c4390"
+  },
+  "docweave.analyzers.javascript:_split_default": {
+   "doc": "ae3f9bf29df2",
+   "anchor": "7687c8f5b1e7"
+  },
+  "docweave.analyzers.javascript:_split_params": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "85a1081481a1"
+  },
+  "docweave.analyzers.javascript:_tail": {
+   "doc": "c73073b62b91",
+   "anchor": "f93343dd7871"
+  },
+  "docweave.analyzers.javascript:analyze": {
+   "doc": "7e3e9898d585",
+   "anchor": "bb2e87491f3e"
+  },
+  "docweave.analyzers.javascript:mask": {
+   "doc": "a3b5aa663a4d",
+   "anchor": "5432eca363fc"
+  },
+  "docweave.analyzers.javascript:module_name": {
+   "doc": "156c00e1ee1f",
+   "anchor": "2eb711be293f"
+  },
+  "docweave.analyzers.python:EXTENSIONS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "4b148c5b8166"
+  },
+  "docweave.analyzers.python:_Builder": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "bce4cf77d026"
+  },
+  "docweave.analyzers.python:_Builder.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "0bbeb1d609df"
+  },
+  "docweave.analyzers.python:_Builder._base": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "0623740dfee0"
+  },
+  "docweave.analyzers.python:_Builder._dunder_all": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "8bee055d20ac"
+  },
+  "docweave.analyzers.python:_Builder._public": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "7c57229c5135"
+  },
+  "docweave.analyzers.python:_Builder.constant": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "a8c4cf0ee9e0"
+  },
+  "docweave.analyzers.python:_Builder.function": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "dc8e7b613cc0"
+  },
+  "docweave.analyzers.python:_Builder.klass": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "b309e9de61c4"
+  },
+  "docweave.analyzers.python:_complexity": {
+   "doc": "ea9dd4de1cf6",
+   "anchor": "dac4ca3c7fc4"
+  },
+  "docweave.analyzers.python:_doc_range": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "360641beac45"
+  },
+  "docweave.analyzers.python:_dotted": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "69d80b722270"
+  },
+  "docweave.analyzers.python:_is_stub": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "9cb91fe4da41"
+  },
+  "docweave.analyzers.python:_leading_comment": {
+   "doc": "3f0b15e6e9d8",
+   "anchor": "f4b7eb584ff7"
+  },
+  "docweave.analyzers.python:_params": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "5c1b1cdf0d7f"
+  },
+  "docweave.analyzers.python:_sha": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "eb784c144c6d"
+  },
+  "docweave.analyzers.python:_src": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "d04fe1f16b39"
+  },
+  "docweave.analyzers.python:analyze": {
+   "doc": "2aca35534894",
+   "anchor": "bb2e87491f3e"
+  },
+  "docweave.analyzers.python:module_name": {
+   "doc": "9f80d0cdfc68",
+   "anchor": "2eb711be293f"
+  },
+  "docweave.analyzers:ANALYZERS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "b974aba17080"
+  },
+  "docweave.analyzers:discover": {
+   "doc": "8a5f025085e9",
+   "anchor": "bcdbd3ce1457"
+  },
+  "docweave.analyzers:is_excluded": {
+   "doc": "f8ceb9d1ec4e",
+   "anchor": "31470dfe0c50"
+  },
+  "docweave.analyzers:scan": {
+   "doc": "c616c9c45fa8",
+   "anchor": "dc71da5408ee"
+  },
+  "docweave.changelog:Release": {
+   "doc": "8fba141eec97",
+   "anchor": "00a36d385cde"
+  },
+  "docweave.changelog:Release.empty": {
+   "doc": "378db29cd947",
+   "anchor": "60605e32de52"
+  },
+  "docweave.changelog:build_changelog": {
+   "doc": "206974ffe867",
+   "anchor": "6bb2bcb97ef7"
+  },
+  "docweave.changelog:is_docs_only": {
+   "doc": "9abfa0a2c1ed",
+   "anchor": "04a0608f5ac0"
+  },
+  "docweave.cli:_analyze": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "3fc5bf622086"
+  },
+  "docweave.cli:_config": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "2d48a1b2249f"
+  },
+  "docweave.cli:_find_symbol": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "517ab3002793"
+  },
+  "docweave.cli:_generate": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "33388bff6e46"
+  },
+  "docweave.cli:_summary": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c5e84ebd3f0b"
+  },
+  "docweave.cli:build_parser": {
+   "doc": "c549b76c8d83",
+   "anchor": "f50ef7694c75"
+  },
+  "docweave.cli:cmd_ask": {
+   "doc": "05f67b6e22f5",
+   "anchor": "ee7a508cb3c4"
+  },
+  "docweave.cli:cmd_changelog": {
+   "doc": "4626350f717e",
+   "anchor": "5716fc02fd82"
+  },
+  "docweave.cli:cmd_check": {
+   "doc": "ce57083a5405",
+   "anchor": "a913687122b5"
+  },
+  "docweave.cli:cmd_comms": {
+   "doc": "51f625b00872",
+   "anchor": "edf76f424a28"
+  },
+  "docweave.cli:cmd_generate": {
+   "doc": "7489436a7af3",
+   "anchor": "eb7d70678de2"
+  },
+  "docweave.cli:cmd_hook": {
+   "doc": "cfebd226aa36",
+   "anchor": "efc5b0a38d09"
+  },
+  "docweave.cli:cmd_init": {
+   "doc": "8d2012b9bc65",
+   "anchor": "aebd3f0aea3c"
+  },
+  "docweave.cli:cmd_watch": {
+   "doc": "8b27653cf043",
+   "anchor": "eb0e7b866552"
+  },
+  "docweave.cli:cmd_why": {
+   "doc": "0bf0750fcd14",
+   "anchor": "5bb335cd38ed"
+  },
+  "docweave.cli:main": {
+   "doc": "3f7c4265d68c",
+   "anchor": "51dc9b93e8e3"
+  },
+  "docweave.comms:GH_FIELDS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "19818767e28b"
+  },
+  "docweave.comms:_author": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "bce40c9ab569"
+  },
+  "docweave.comms:_from_object": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "203073d4a0a1"
+  },
+  "docweave.comms:_parse_date": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "8fb4d97a2ddb"
+  },
+  "docweave.comms:load_comms": {
+   "doc": "622a81ea6ded",
+   "anchor": "f80af01185c2"
+  },
+  "docweave.comms:pull_github": {
+   "doc": "e10a707d34d1",
+   "anchor": "bc357c87e6f0"
+  },
+  "docweave.config:CONFIG_TEMPLATE": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "25d70c4f56f4"
+  },
+  "docweave.config:Config": {
+   "doc": "417bfe3ef8f5",
+   "anchor": "beb0319b9296"
+  },
+  "docweave.config:Config.excludes": {
+   "doc": "291c91b96445",
+   "anchor": "ebbaafc5ae8c"
+  },
+  "docweave.config:Config.state_dir": {
+   "doc": "1d5f147ddb62",
+   "anchor": "ada76c3d6fa2"
+  },
+  "docweave.config:DEFAULT_EXCLUDE": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "a0325015534b"
+  },
+  "docweave.config:load_config": {
+   "doc": "040fa3d88cc2",
+   "anchor": "ba94695a5e6a"
+  },
+  "docweave.drift:Health": {
+   "doc": "ae5db1b694d1",
+   "anchor": "e116d07b8f80"
+  },
+  "docweave.drift:Health.coverage": {
+   "doc": "6e1b94536326",
+   "anchor": "a53539a380d0"
+  },
+  "docweave.drift:ISSUE_HELP": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "09eb3602384d"
+  },
+  "docweave.drift:Reference": {
+   "doc": "625d176c02bc",
+   "anchor": "b23d2983dd16"
+  },
+  "docweave.drift:SEVERITIES": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "db1dfe675a82"
+  },
+  "docweave.drift:_doc_hash": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "2fef77a82e9b"
+  },
+  "docweave.drift:_evidence": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "a84d3111dbee"
+  },
+  "docweave.drift:_later_changes": {
+   "doc": "7799e298bd42",
+   "anchor": "a88c51f79115"
+  },
+  "docweave.drift:_names": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "dca0efc502a4"
+  },
+  "docweave.drift:check_anchors": {
+   "doc": "0daf922557b1",
+   "anchor": "3852c6861921"
+  },
+  "docweave.drift:check_claims": {
+   "doc": "cac2651b208e",
+   "anchor": "f4c7f3f31a77"
+  },
+  "docweave.drift:check_references": {
+   "doc": "26c53c24bf62",
+   "anchor": "b7c4ed516483"
+  },
+  "docweave.drift:check_staleness": {
+   "doc": "0462443cd1ef",
+   "anchor": "211ce181651b"
+  },
+  "docweave.drift:detect": {
+   "doc": "ac86de3463fb",
+   "anchor": "ab44fbb33f05"
+  },
+  "docweave.drift:health": {
+   "doc": "98fb9bdd37e5",
+   "anchor": "b9f06f719f31"
+  },
+  "docweave.drift:is_documented": {
+   "doc": "5edbfe1042e2",
+   "anchor": "8d4eabac34a6"
+  },
+  "docweave.drift:load_state": {
+   "doc": "30e6e3f117fa",
+   "anchor": "1e8fd25914ed"
+  },
+  "docweave.drift:name_index": {
+   "doc": "5e931dfec065",
+   "anchor": "9e0c0e32d5e6"
+  },
+  "docweave.drift:next_state": {
+   "doc": "d8b1b4afca36",
+   "anchor": "e6b1b44716a3"
+  },
+  "docweave.drift:resolve_name": {
+   "doc": "af219931b1a5",
+   "anchor": "dd2ea3b8e2cc"
+  },
+  "docweave.drift:save_state": {
+   "doc": "afc20b53b349",
+   "anchor": "fb36b8713ac2"
+  },
+  "docweave.drift:scan_markdown": {
+   "doc": "bc93c0cb37de",
+   "anchor": "e9ed0c29f35f"
+  },
+  "docweave.engine:Analysis": {
+   "doc": "cd3e626420ab",
+   "anchor": "a42f6b6d3449"
+  },
+  "docweave.engine:Analysis.issues_for": {
+   "doc": "5d5e1f808aa1",
+   "anchor": "0649cbb01ee4"
+  },
+  "docweave.engine:Analysis.symbols_of": {
+   "doc": "e7f5e2edccce",
+   "anchor": "73b6927cb9a7"
+  },
+  "docweave.engine:Analysis.visible": {
+   "doc": "b97206d36c64",
+   "anchor": "82900ac46973"
+  },
+  "docweave.engine:analyze": {
+   "doc": "a913554a6ec9",
+   "anchor": "50a636b14782"
+  },
+  "docweave.gitrepo:GitRepo": {
+   "doc": "e1eaf4ee6384",
+   "anchor": "c25a6c891563"
+  },
+  "docweave.gitrepo:GitRepo.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c8f1c1e68c9b"
+  },
+  "docweave.gitrepo:GitRepo._git": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "58a8b0a34200"
+  },
+  "docweave.gitrepo:GitRepo._parse_log": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "99cc83312396"
+  },
+  "docweave.gitrepo:GitRepo.blame": {
+   "doc": "5ecdef10ddd2",
+   "anchor": "31c3ee2d4583"
+  },
+  "docweave.gitrepo:GitRepo.blame_many": {
+   "doc": "8e719bc0a62c",
+   "anchor": "f0c076b81e37"
+  },
+  "docweave.gitrepo:GitRepo.deleted_files": {
+   "doc": "9d04763d7c86",
+   "anchor": "92af084a3945"
+  },
+  "docweave.gitrepo:GitRepo.log": {
+   "doc": "1be2a013f024",
+   "anchor": "a3eff362ce19"
+  },
+  "docweave.gitrepo:GitRepo.open": {
+   "doc": "202405d51042",
+   "anchor": "123229432a0b"
+  },
+  "docweave.gitrepo:GitRepo.removed_definitions": {
+   "doc": "6f37f762777f",
+   "anchor": "b3b76c0b63f2"
+  },
+  "docweave.gitrepo:GitRepo.show": {
+   "doc": "20eb9998134a",
+   "anchor": "896f01146dfd"
+  },
+  "docweave.gitrepo:GitRepo.staged_files": {
+   "doc": "de549ddc5b72",
+   "anchor": "6ceb3a398703"
+  },
+  "docweave.gitrepo:GitRepo.web_url": {
+   "doc": "405f6a70512a",
+   "anchor": "2aa0a8a46087"
+  },
+  "docweave.gitrepo:Removal": {
+   "doc": "598ee1c7b474",
+   "anchor": "d453eb369bb3"
+  },
+  "docweave.gitrepo:UNCOMMITTED": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "226913e03a46"
+  },
+  "docweave.gitrepo:_numstat_path": {
+   "doc": "1104f7cb6615",
+   "anchor": "503e0be31356"
+  },
+  "docweave.gitrepo:worktree_message": {
+   "doc": "281a98452cd7",
+   "anchor": "89862961d59c"
+  },
+  "docweave.graph:_node_id": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "b8f6b3717ab2"
+  },
+  "docweave.graph:cycles": {
+   "doc": "7a68be7a4c9d",
+   "anchor": "cb5f14aa5dc1"
+  },
+  "docweave.graph:external_dependencies": {
+   "doc": "634d7ebde49c",
+   "anchor": "eba57ee44402"
+  },
+  "docweave.graph:internal_edges": {
+   "doc": "37331e866d2c",
+   "anchor": "304425bdc722"
+  },
+  "docweave.graph:mermaid": {
+   "doc": "00f209e6193f",
+   "anchor": "0aa15b8b282e"
+  },
+  "docweave.hooks:CI_WORKFLOW": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "9425c45292bf"
+  },
+  "docweave.hooks:MARKER": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "292c4d2ae430"
+  },
+  "docweave.hooks:_hook_path": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "a4f720abdd5c"
+  },
+  "docweave.hooks:install_hook": {
+   "doc": "068c71dce5bd",
+   "anchor": "4988864b2637"
+  },
+  "docweave.hooks:uninstall_hook": {
+   "doc": "dc65b0222cb6",
+   "anchor": "bb209e605a22"
+  },
+  "docweave.hooks:write_ci": {
+   "doc": "7f4959984278",
+   "anchor": "afe701d82abc"
+  },
+  "docweave.linker:BlameInfo": {
+   "doc": "42614e02ab05",
+   "anchor": "e85c896ee0c9"
+  },
+  "docweave.linker:Linker": {
+   "doc": "7232c2f1472c",
+   "anchor": "d03a4b295e79"
+  },
+  "docweave.linker:Linker.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "8705eec8a813"
+  },
+  "docweave.linker:Linker.mentions": {
+   "doc": "7b710f221459",
+   "anchor": "ccc43435acb6"
+  },
+  "docweave.linker:Linker.run": {
+   "doc": "889273efcfe3",
+   "anchor": "47cbfca5788a"
+  },
+  "docweave.linker:MIN_CONFIDENCE": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "5977ade567f2"
+  },
+  "docweave.linker:_noisy_or": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "8f451393cc5a"
+  },
+  "docweave.linker:is_distinctive": {
+   "doc": "eccfb264b9a4",
+   "anchor": "a52bf9159a3b"
+  },
+  "docweave.linker:owners": {
+   "doc": "f143638dfccd",
+   "anchor": "8f824eb223da"
+  },
+  "docweave.linker:symbol_blame": {
+   "doc": "888728eec60c",
+   "anchor": "64bea5ee42ce"
+  },
+  "docweave.llm:BATCH": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "b6cca12605a1"
+  },
+  "docweave.llm:LLMError": {
+   "doc": "26624a843c70",
+   "anchor": "55749b92a023"
+  },
+  "docweave.llm:_call": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c795116fa018"
+  },
+  "docweave.llm:_client": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "40b83ce49b4c"
+  },
+  "docweave.llm:_create": {
+   "doc": "efa4b16acb2d",
+   "anchor": "0dd02cee7a67"
+  },
+  "docweave.llm:_prompt": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c0401f3a9a57"
+  },
+  "docweave.llm:_text": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "00e0b7a8ef83"
+  },
+  "docweave.llm:answer": {
+   "doc": "864fce132044",
+   "anchor": "487b0a457030"
+  },
+  "docweave.llm:summarize_undocumented": {
+   "doc": "dbddcee932ff",
+   "anchor": "4ed834ffd480"
+  },
+  "docweave.model:Issue": {
+   "doc": "fa1f857512ca",
+   "anchor": "1a13b1c8e6fa"
+  },
+  "docweave.model:Issue.sort_key": {
+   "doc": "c185339e2ff1",
+   "anchor": "138756578415"
+  },
+  "docweave.model:Link": {
+   "doc": "bf36dc73a783",
+   "anchor": "748249fcb7b7"
+  },
+  "docweave.model:Message": {
+   "doc": "b40d750de9df",
+   "anchor": "61aee5fa0b7f"
+  },
+  "docweave.model:Message.day": {
+   "doc": "d5c4cfec5bbc",
+   "anchor": "bf044a08f49c"
+  },
+  "docweave.model:Message.label": {
+   "doc": "aae2a0f0a072",
+   "anchor": "e18c18430f8a"
+  },
+  "docweave.model:Message.sha": {
+   "doc": "66c6cd792538",
+   "anchor": "2e967d91e5f1"
+  },
+  "docweave.model:Message.text": {
+   "doc": "51c5cb43b606",
+   "anchor": "74bbec7785b4"
+  },
+  "docweave.model:Message.timestamp": {
+   "doc": "9240d0de5045",
+   "anchor": "1e4ce7fe30ba"
+  },
+  "docweave.model:Module": {
+   "doc": "873d98ee32f6",
+   "anchor": "ab95a76e8535"
+  },
+  "docweave.model:Param": {
+   "doc": "fcbd838bd1d9",
+   "anchor": "e537942f9978"
+  },
+  "docweave.model:Project": {
+   "doc": "8d96f77e042e",
+   "anchor": "47a6d0d8020b"
+  },
+  "docweave.model:Project.by_file": {
+   "doc": "47117a8ec945",
+   "anchor": "c6bfae139a41"
+  },
+  "docweave.model:Project.symbols": {
+   "doc": "b9878b700ea8",
+   "anchor": "3f841cbb590e"
+  },
+  "docweave.model:Symbol": {
+   "doc": "ac364e4a5e87",
+   "anchor": "469ef88b0d30"
+  },
+  "docweave.model:Symbol.anchor": {
+   "doc": "49047f664e72",
+   "anchor": "3b111d84a236"
+  },
+  "docweave.nlp.describe:describe": {
+   "doc": "04a1303a3607",
+   "anchor": "a9cc1d6793f0"
+  },
+  "docweave.nlp.docstring:ALL_HEADS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "4ebbfb482b50"
+  },
+  "docweave.nlp.docstring:DocInfo": {
+   "doc": "8048b639de8f",
+   "anchor": "46754740da05"
+  },
+  "docweave.nlp.docstring:OTHER_HEADS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "c398e319ea50"
+  },
+  "docweave.nlp.docstring:PARAM_HEADS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "29b5c4714b3d"
+  },
+  "docweave.nlp.docstring:RAISE_HEADS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "1618342e2aa4"
+  },
+  "docweave.nlp.docstring:RETURN_HEADS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "4467b139bd03"
+  },
+  "docweave.nlp.docstring:_entries": {
+   "doc": "63e4370866a9",
+   "anchor": "207a95d72063"
+  },
+  "docweave.nlp.docstring:_flatten_jsdoc_type": {
+   "doc": "2f2a6d7aea8e",
+   "anchor": "8dfab3808236"
+  },
+  "docweave.nlp.docstring:_indent": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "ccd3f04aab96"
+  },
+  "docweave.nlp.docstring:_restore_type": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "585bd8dca630"
+  },
+  "docweave.nlp.docstring:parse_docstring": {
+   "doc": "f87d16f42274",
+   "anchor": "5326a1ce4565"
+  },
+  "docweave.nlp.index:TextIndex": {
+   "doc": "fbd12207c84b",
+   "anchor": "08b06e4af11f"
+  },
+  "docweave.nlp.index:TextIndex.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "4034b92eeec0"
+  },
+  "docweave.nlp.index:TextIndex.add": {
+   "doc": "d196efbee017",
+   "anchor": "489be3e7a0bd"
+  },
+  "docweave.nlp.index:TextIndex.bm25": {
+   "doc": "fd3e08579d36",
+   "anchor": "536ef909a1dc"
+  },
+  "docweave.nlp.index:TextIndex.cosine": {
+   "doc": "5f02c3deda4d",
+   "anchor": "1c44e8fb9fb8"
+  },
+  "docweave.nlp.index:TextIndex.finalize": {
+   "doc": "b766360a961d",
+   "anchor": "e867a32420d7"
+  },
+  "docweave.nlp.intent:DOC_IMPACT": {
+   "doc": "306fd1507f4e",
+   "anchor": "4c248c73a126"
+  },
+  "docweave.nlp.intent:INTENTS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "febbe1e6347b"
+  },
+  "docweave.nlp.intent:INTENT_TITLES": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "35a2e8b90a50"
+  },
+  "docweave.nlp.intent:LEXICON": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "6661f616fef8"
+  },
+  "docweave.nlp.intent:classify": {
+   "doc": "684be0a35bf4",
+   "anchor": "02fbdc59b321"
+  },
+  "docweave.nlp.rationale:decision_score": {
+   "doc": "a7594d60330d",
+   "anchor": "81cdabe89338"
+  },
+  "docweave.nlp.rationale:rationale": {
+   "doc": "abffc6256c5c",
+   "anchor": "40c20d66ece2"
+  },
+  "docweave.nlp.rationale:score_sentence": {
+   "doc": "5fc6e6fd5d90",
+   "anchor": "1d8c843a3d23"
+  },
+  "docweave.nlp.text:STOPWORDS": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "0e52f815c224"
+  },
+  "docweave.nlp.text:first_sentence": {
+   "doc": "ed63c11ecd9f",
+   "anchor": "9bbe05e95e98"
+  },
+  "docweave.nlp.text:sentences": {
+   "doc": "bf7011437ffe",
+   "anchor": "dbd7ac5aa1e0"
+  },
+  "docweave.nlp.text:split_identifier": {
+   "doc": "ce2a25fc8fb4",
+   "anchor": "349d5738333c"
+  },
+  "docweave.nlp.text:stem": {
+   "doc": "5f18c2e9ccdc",
+   "anchor": "7edc3411d2d3"
+  },
+  "docweave.nlp.text:tokenize": {
+   "doc": "9be0e9fa2eaf",
+   "anchor": "8285fbab2179"
+  },
+  "docweave.regions:merge": {
+   "doc": "aad76a332d93",
+   "anchor": "4ea1cf662449"
+  },
+  "docweave.regions:region_ids": {
+   "doc": "9f16ce8700d1",
+   "anchor": "8ff2cad3c36b"
+  },
+  "docweave.regions:strip_regions": {
+   "doc": "d7e381357e30",
+   "anchor": "55d8ef294e65"
+  },
+  "docweave.regions:wrap": {
+   "doc": "159b2c1913e7",
+   "anchor": "c4b69ebdf841"
+  },
+  "docweave.render:Renderer": {
+   "doc": "c3bed9ba4873",
+   "anchor": "1cd97ccded67"
+  },
+  "docweave.render:Renderer.__init__": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "399d272b0840"
+  },
+  "docweave.render:Renderer._owner_text": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "8ae54abb5bc0"
+  },
+  "docweave.render:Renderer.api_page": {
+   "doc": "37081df54341",
+   "anchor": "e1848f4840fd"
+  },
+  "docweave.render:Renderer.architecture_page": {
+   "doc": "179a7b019ca3",
+   "anchor": "bbb14e357abd"
+  },
+  "docweave.render:Renderer.changelog_page": {
+   "doc": "ec203d3dd2b9",
+   "anchor": "9f9ce851db34"
+  },
+  "docweave.render:Renderer.coverable": {
+   "doc": "4816d02a7d72",
+   "anchor": "fdf31dd994f7"
+  },
+  "docweave.render:Renderer.decisions_page": {
+   "doc": "8c565bd079da",
+   "anchor": "689e80aa35eb"
+  },
+  "docweave.render:Renderer.health_line": {
+   "doc": "02339c367654",
+   "anchor": "30c33a799d13"
+  },
+  "docweave.render:Renderer.health_page": {
+   "doc": "1f9cd56e589f",
+   "anchor": "2ae33185a4ac"
+  },
+  "docweave.render:Renderer.history": {
+   "doc": "6bb5826176f8",
+   "anchor": "5cf7390d71ba"
+  },
+  "docweave.render:Renderer.index_page": {
+   "doc": "f75fb1146b6f",
+   "anchor": "9b34d96ba801"
+  },
+  "docweave.render:Renderer.inject_blocks": {
+   "doc": "ea2322ea9a10",
+   "anchor": "1ac4f4cd896a"
+  },
+  "docweave.render:Renderer.message_ref": {
+   "doc": "73d734187b75",
+   "anchor": "11efba0308c3"
+  },
+  "docweave.render:Renderer.module_owners": {
+   "doc": "d081e0e6749b",
+   "anchor": "f78de7bcaf9d"
+  },
+  "docweave.render:Renderer.module_page": {
+   "doc": "08f8b02edd28",
+   "anchor": "afa86f8d875b"
+  },
+  "docweave.render:Renderer.module_summary": {
+   "doc": "8337e0041bec",
+   "anchor": "6837bc50a41f"
+  },
+  "docweave.render:Renderer.module_table": {
+   "doc": "517588386704",
+   "anchor": "c7c01eb79598"
+  },
+  "docweave.render:Renderer.pages": {
+   "doc": "71d12e056f4e",
+   "anchor": "e0ffbb693fc2"
+  },
+  "docweave.render:Renderer.recent_changes": {
+   "doc": "a882270922a8",
+   "anchor": "eb85919e1230"
+  },
+  "docweave.render:Renderer.rel": {
+   "doc": "d91e6c1826f8",
+   "anchor": "8127768258ad"
+  },
+  "docweave.render:Renderer.summary_of": {
+   "doc": "8a62185cb10b",
+   "anchor": "fb4269931cd2"
+  },
+  "docweave.render:Renderer.symbol_block": {
+   "doc": "3973e0b470a4",
+   "anchor": "7abff978d830"
+  },
+  "docweave.render:Renderer.symbol_link": {
+   "doc": "3b89b028170f",
+   "anchor": "2b953f8d2977"
+  },
+  "docweave.render:Renderer.visible_modules": {
+   "doc": "f499e981a51c",
+   "anchor": "f4ca15a462c5"
+  },
+  "docweave.render:_cell": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "39f245a66d15"
+  },
+  "docweave.render:_clip": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "aa414e21a4d2"
+  },
+  "docweave.render:_slug": {
+   "doc": "da39a3ee5e6b",
+   "anchor": "649b7439df08"
+  },
+  "docweave.render:render": {
+   "doc": "86a953e2e6be",
+   "anchor": "b876349de367"
+  },
+  "docweave.render:stale_pages": {
+   "doc": "e397cd8eb384",
+   "anchor": "c8d56d3106d3"
+  },
+  "docweave.render:write": {
+   "doc": "7b02fb4017f9",
+   "anchor": "8168b732023d"
+  },
+  "docweave.search:Hit": {
+   "doc": "47b02419243e",
+   "anchor": "3524a5bf1ab0"
+  },
+  "docweave.search:search": {
+   "doc": "5dd8a60fae4f",
+   "anchor": "cb54f4b77315"
+  }
+ }
+}
