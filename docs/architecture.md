@@ -166,7 +166,7 @@ Files that are both complex and frequently changed - where stale documentation c
 
 | File | Commits | Complexity | Undocumented public symbols |
 | --- | ---: | ---: | ---: |
-| [`docweave/render.py`](api/docweave.render.md) | 1 | 232 | 0 of 26 |
+| [`docweave/render.py`](api/docweave.render.md) | 2 | 233 | 0 of 26 |
 | [`docweave/analyzers/javascript.py`](api/docweave.analyzers.javascript.md) | 1 | 185 | 0 of 3 |
 | [`docweave/drift.py`](api/docweave.drift.md) | 1 | 178 | 0 of 16 |
 | [`docweave/analyzers/python.py`](api/docweave.analyzers.python.md) | 1 | 138 | 0 of 2 |

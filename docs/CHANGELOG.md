@@ -10,4 +10,8 @@ Generated from commit history. Changes are grouped by what each commit *does*, c
 ### Features
 
 - DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR) - [`Reference`](api/docweave.drift.md#reference), [`check_staleness`](api/docweave.drift.md#check-staleness), [`scan_markdown`](api/docweave.drift.md#scan-markdown)
+
+### Fixes
+
+- Keep housekeeping commits out of the decision log ([`409eb66`](https://github.com/AashutoshR/docweave/commit/409eb66f44bbd2ce81f1e71e007b10ca3a900eba), AashutoshR) - [`Renderer.decisions_page`](api/docweave.render.md#renderer-decisions-page)
 <!-- docweave:end release:Unreleased -->

@@ -8,7 +8,7 @@ markers (see :mod:`docweave.regions`), which is what lets regeneration update th
 while keeping anything a person added around them. Output is deterministic - no timestamps - so
 an unchanged project regenerates byte-identical docs and ``git diff`` stays quiet.
 
-Source: [`docweave/render.py`](../../docweave/render.py) · 468 lines · main authors: AashutoshR (100%)
+Source: [`docweave/render.py`](../../docweave/render.py) · 469 lines · main authors: AashutoshR (100%)
 
 **Imports:** [`docweave`](docweave.md), [`docweave.changelog`](docweave.changelog.md), [`docweave.drift`](docweave.drift.md), [`docweave.engine`](docweave.engine.md), [`docweave.graph`](docweave.graph.md), [`docweave.linker`](docweave.linker.md), [`docweave.model`](docweave.model.md), [`docweave.nlp.describe`](docweave.nlp.describe.md), [`docweave.nlp.docstring`](docweave.nlp.docstring.md), [`docweave.nlp.intent`](docweave.nlp.intent.md), [`docweave.nlp.rationale`](docweave.nlp.rationale.md), [`docweave.nlp.text`](docweave.nlp.text.md), [`docweave.regions`](docweave.regions.md)
 
@@ -546,13 +546,14 @@ Decision log: messages that explain a choice, newest first, linked to the code t
 
 **Returns:** `Blocks`
 
-<details><summary>History and rationale (1)</summary>
+<details><summary>History and rationale (2)</summary>
 
+- 2026-10-12 · **fix** · Keep housekeeping commits out of the decision log ([`409eb66`](https://github.com/AashutoshR/docweave/commit/409eb66f44bbd2ce81f1e71e007b10ca3a900eba), AashutoshR)<br>*Why:* A docs, style, chore or test commit whose message happens to contain a decision keyword was listed as a design decision.
 - 2026-10-12 · **feature** · DocWeave, living documentation from code and developer communication ([`00f6a67`](https://github.com/AashutoshR/docweave/commit/00f6a671df46bc2c98a4d65bcaffa2115e4e5d36), AashutoshR)<br>*Why:* Drift detection: docstring claims checked against the code, dangling references in hand-written Markdown traced to the commit that removed them, and blame-based staleness weighted by classified commit intent so that for…
 
 </details>
 
-<sub>[`docweave/render.py:351`](../../docweave/render.py#L351) · complexity 17 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:351`](../../docweave/render.py#L351) · complexity 18 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.decisions_page -->
 
 <!-- docweave:begin sym:Renderer.health_page -->
@@ -573,7 +574,7 @@ Health report: score, every drift issue by severity, and per-module coverage.
 
 </details>
 
-<sub>[`docweave/render.py:377`](../../docweave/render.py#L377) · complexity 16 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:378`](../../docweave/render.py#L378) · complexity 16 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.health_page -->
 
 <!-- docweave:begin sym:Renderer.inject_blocks -->
@@ -598,7 +599,7 @@ Blocks that can be embedded in hand-written files (README etc.) via region marke
 
 </details>
 
-<sub>[`docweave/render.py:411`](../../docweave/render.py#L411) · complexity 3 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:412`](../../docweave/render.py#L412) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:Renderer.inject_blocks -->
 
 <!-- docweave:begin sym:render -->
@@ -623,7 +624,7 @@ Produce the final text of every documentation file, merged with what is already 
 
 </details>
 
-<sub>[`docweave/render.py:421`](../../docweave/render.py#L421) · complexity 6 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:422`](../../docweave/render.py#L422) · complexity 6 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:render -->
 
 <!-- docweave:begin sym:stale_pages -->
@@ -649,7 +650,7 @@ Compare rendered ``files`` with disk: returns (changed or new files, orphaned AP
 
 </details>
 
-<sub>[`docweave/render.py:440`](../../docweave/render.py#L440) · complexity 9 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:441`](../../docweave/render.py#L441) · complexity 9 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:stale_pages -->
 
 <!-- docweave:begin sym:write -->
@@ -675,5 +676,5 @@ Write changed files, delete API pages for modules that no longer exist; return b
 
 </details>
 
-<sub>[`docweave/render.py:458`](../../docweave/render.py#L458) · complexity 3 · written by AashutoshR (100%)</sub>
+<sub>[`docweave/render.py:459`](../../docweave/render.py#L459) · complexity 3 · written by AashutoshR (100%)</sub>
 <!-- docweave:end sym:write -->
